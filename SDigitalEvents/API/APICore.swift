@@ -8,7 +8,7 @@ protocol Mockable {
 }
 
 protocol APICore: class {
-    func requestObject<T: Output>(from endpoint: APIEndpoint, type: T.Type, completion: @escaping CompletionCallback<T>)
+    static func requestObject<T: Output>(from endpoint: APIEndpoint, data: Data?, type: T.Type, completion: @escaping CompletionCallback<T>)
 }
 
 enum CompletionStatus<T> {
