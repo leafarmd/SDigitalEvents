@@ -66,4 +66,30 @@ final class APIService: APICore {
             }
             }.resume()
     }
+    
+    static func loadImage(from url: String, completion: @escaping RequestImageResult) {
+        
+        guard let url = URL(string: url) else {
+            completion(.failure(.invalidData))
+            return
+        }
+        
+        do {
+            let data = try Data(contentsOf: url)
+            guard let image = UIImage(data: data) else {
+                DispatchQueue.main.async {
+                    completion(.failure(.invalidData))
+                }
+                return
+            }
+            
+            DispatchQueue.main.async {
+                completion(.success(image))
+            }
+        } catch {
+            DispatchQueue.main.async {
+                completion(.failure(.invalidData))
+            }
+        }
+    }
 }
