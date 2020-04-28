@@ -19,17 +19,26 @@
 		3008D0232457959600C892B0 /* APIEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3008D0222457959600C892B0 /* APIEndpoints.swift */; };
 		302E615F24579CF00019C4BD /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302E615E24579CF00019C4BD /* APIService.swift */; };
 		302E61632457B78A0019C4BD /* EventsOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302E61622457B78A0019C4BD /* EventsOutput.swift */; };
-		302E61762458B24D0019C4BD /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302E61712458B24D0019C4BD /* StringExtensions.swift */; };
-		302E61772458B24D0019C4BD /* DoubleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302E61722458B24D0019C4BD /* DoubleExtensions.swift */; };
-		302E61782458B24D0019C4BD /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302E61732458B24D0019C4BD /* UIViewControllerExtensions.swift */; };
-		302E61792458B24D0019C4BD /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302E61742458B24D0019C4BD /* DateExtensions.swift */; };
-		302E617A2458B24D0019C4BD /* UIImageViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302E61752458B24D0019C4BD /* UIImageViewExtensions.swift */; };
-		302E61832458B33D0019C4BD /* TestCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302E617D2458B33D0019C4BD /* TestCell.swift */; };
-		302E61842458B33D0019C4BD /* CellConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302E617E2458B33D0019C4BD /* CellConfigurator.swift */; };
-		302E61852458B33D0019C4BD /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302E617F2458B33D0019C4BD /* TableViewController.swift */; };
-		302E61862458B33D0019C4BD /* TableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302E61802458B33D0019C4BD /* TableViewModel.swift */; };
-		302E61872458B33D0019C4BD /* TableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 302E61812458B33D0019C4BD /* TableViewController.xib */; };
-		302E61882458B33D0019C4BD /* TableViewDataSoruce.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302E61822458B33D0019C4BD /* TableViewDataSoruce.swift */; };
+		302E61BC2458EDCD0019C4BD /* TestCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302E61B62458EDCC0019C4BD /* TestCell.swift */; };
+		302E61BD2458EDCD0019C4BD /* CellConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302E61B72458EDCC0019C4BD /* CellConfigurator.swift */; };
+		302E61BE2458EDCD0019C4BD /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302E61B82458EDCC0019C4BD /* TableViewController.swift */; };
+		302E61BF2458EDCD0019C4BD /* TableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302E61B92458EDCC0019C4BD /* TableViewModel.swift */; };
+		302E61C02458EDCD0019C4BD /* TableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 302E61BA2458EDCC0019C4BD /* TableViewController.xib */; };
+		302E61C12458EDCD0019C4BD /* TableViewDataSoruce.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302E61BB2458EDCC0019C4BD /* TableViewDataSoruce.swift */; };
+		302E61CD2458EDDA0019C4BD /* EventModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302E61C42458EDDA0019C4BD /* EventModel.swift */; };
+		302E61CE2458EDDA0019C4BD /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302E61C52458EDDA0019C4BD /* EventsViewController.swift */; };
+		302E61CF2458EDDA0019C4BD /* EventsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302E61C62458EDDA0019C4BD /* EventsRouter.swift */; };
+		302E61D02458EDDA0019C4BD /* EventsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302E61C82458EDDA0019C4BD /* EventsTableViewCell.swift */; };
+		302E61D12458EDDA0019C4BD /* EventsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 302E61C92458EDDA0019C4BD /* EventsTableViewCell.xib */; };
+		302E61D22458EDDA0019C4BD /* EventsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302E61CA2458EDDA0019C4BD /* EventsService.swift */; };
+		302E61D32458EDDA0019C4BD /* EventsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302E61CB2458EDDA0019C4BD /* EventsPresenter.swift */; };
+		302E61D42458EDDA0019C4BD /* EventsProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302E61CC2458EDDA0019C4BD /* EventsProtocols.swift */; };
+		302E61D62458EDF30019C4BD /* LoadingHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302E61D52458EDF30019C4BD /* LoadingHandler.swift */; };
+		302E61DD2458EE3F0019C4BD /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302E61D82458EE3F0019C4BD /* StringExtensions.swift */; };
+		302E61DE2458EE3F0019C4BD /* DoubleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302E61D92458EE3F0019C4BD /* DoubleExtensions.swift */; };
+		302E61DF2458EE3F0019C4BD /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302E61DA2458EE3F0019C4BD /* UIViewControllerExtensions.swift */; };
+		302E61E02458EE3F0019C4BD /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302E61DB2458EE3F0019C4BD /* DateExtensions.swift */; };
+		302E61E12458EE3F0019C4BD /* UIImageViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302E61DC2458EE3F0019C4BD /* UIImageViewExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,17 +77,26 @@
 		3008D0222457959600C892B0 /* APIEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndpoints.swift; sourceTree = "<group>"; };
 		302E615E24579CF00019C4BD /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		302E61622457B78A0019C4BD /* EventsOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsOutput.swift; sourceTree = "<group>"; };
-		302E61712458B24D0019C4BD /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
-		302E61722458B24D0019C4BD /* DoubleExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoubleExtensions.swift; sourceTree = "<group>"; };
-		302E61732458B24D0019C4BD /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
-		302E61742458B24D0019C4BD /* DateExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtensions.swift; sourceTree = "<group>"; };
-		302E61752458B24D0019C4BD /* UIImageViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageViewExtensions.swift; sourceTree = "<group>"; };
-		302E617D2458B33D0019C4BD /* TestCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestCell.swift; sourceTree = "<group>"; };
-		302E617E2458B33D0019C4BD /* CellConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellConfigurator.swift; sourceTree = "<group>"; };
-		302E617F2458B33D0019C4BD /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
-		302E61802458B33D0019C4BD /* TableViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewModel.swift; sourceTree = "<group>"; };
-		302E61812458B33D0019C4BD /* TableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewController.xib; sourceTree = "<group>"; };
-		302E61822458B33D0019C4BD /* TableViewDataSoruce.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewDataSoruce.swift; sourceTree = "<group>"; };
+		302E61B62458EDCC0019C4BD /* TestCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestCell.swift; sourceTree = "<group>"; };
+		302E61B72458EDCC0019C4BD /* CellConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellConfigurator.swift; sourceTree = "<group>"; };
+		302E61B82458EDCC0019C4BD /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		302E61B92458EDCC0019C4BD /* TableViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewModel.swift; sourceTree = "<group>"; };
+		302E61BA2458EDCC0019C4BD /* TableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewController.xib; sourceTree = "<group>"; };
+		302E61BB2458EDCC0019C4BD /* TableViewDataSoruce.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewDataSoruce.swift; sourceTree = "<group>"; };
+		302E61C42458EDDA0019C4BD /* EventModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventModel.swift; sourceTree = "<group>"; };
+		302E61C52458EDDA0019C4BD /* EventsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
+		302E61C62458EDDA0019C4BD /* EventsRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsRouter.swift; sourceTree = "<group>"; };
+		302E61C82458EDDA0019C4BD /* EventsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsTableViewCell.swift; sourceTree = "<group>"; };
+		302E61C92458EDDA0019C4BD /* EventsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventsTableViewCell.xib; sourceTree = "<group>"; };
+		302E61CA2458EDDA0019C4BD /* EventsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsService.swift; sourceTree = "<group>"; };
+		302E61CB2458EDDA0019C4BD /* EventsPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsPresenter.swift; sourceTree = "<group>"; };
+		302E61CC2458EDDA0019C4BD /* EventsProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsProtocols.swift; sourceTree = "<group>"; };
+		302E61D52458EDF30019C4BD /* LoadingHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingHandler.swift; sourceTree = "<group>"; };
+		302E61D82458EE3F0019C4BD /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		302E61D92458EE3F0019C4BD /* DoubleExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoubleExtensions.swift; sourceTree = "<group>"; };
+		302E61DA2458EE3F0019C4BD /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
+		302E61DB2458EE3F0019C4BD /* DateExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtensions.swift; sourceTree = "<group>"; };
+		302E61DC2458EE3F0019C4BD /* UIImageViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageViewExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,8 +147,9 @@
 		3008CFEE2457934F00C892B0 /* SDigitalEvents */ = {
 			isa = PBXGroup;
 			children = (
+				302E61D72458EE3F0019C4BD /* Extensions */,
+				302E61C22458EDDA0019C4BD /* Features */,
 				302E617B2458B2CB0019C4BD /* Components */,
-				302E61702458B24D0019C4BD /* Extensions */,
 				3008D01F245794D700C892B0 /* API */,
 				3008CFEF2457934F00C892B0 /* AppDelegate.swift */,
 				3008CFF12457934F00C892B0 /* SceneDelegate.swift */,
@@ -188,38 +207,70 @@
 			path = Output;
 			sourceTree = "<group>";
 		};
-		302E61702458B24D0019C4BD /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				302E61712458B24D0019C4BD /* StringExtensions.swift */,
-				302E61722458B24D0019C4BD /* DoubleExtensions.swift */,
-				302E61732458B24D0019C4BD /* UIViewControllerExtensions.swift */,
-				302E61742458B24D0019C4BD /* DateExtensions.swift */,
-				302E61752458B24D0019C4BD /* UIImageViewExtensions.swift */,
-			);
-			path = Extensions;
-			sourceTree = SOURCE_ROOT;
-		};
 		302E617B2458B2CB0019C4BD /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				302E617C2458B33D0019C4BD /* GenericTableView */,
+				302E61D52458EDF30019C4BD /* LoadingHandler.swift */,
+				302E61B52458EDCC0019C4BD /* GenericTableView */,
 			);
 			path = Components;
 			sourceTree = "<group>";
 		};
-		302E617C2458B33D0019C4BD /* GenericTableView */ = {
+		302E61B52458EDCC0019C4BD /* GenericTableView */ = {
 			isa = PBXGroup;
 			children = (
-				302E617D2458B33D0019C4BD /* TestCell.swift */,
-				302E617E2458B33D0019C4BD /* CellConfigurator.swift */,
-				302E617F2458B33D0019C4BD /* TableViewController.swift */,
-				302E61802458B33D0019C4BD /* TableViewModel.swift */,
-				302E61812458B33D0019C4BD /* TableViewController.xib */,
-				302E61822458B33D0019C4BD /* TableViewDataSoruce.swift */,
+				302E61B62458EDCC0019C4BD /* TestCell.swift */,
+				302E61B72458EDCC0019C4BD /* CellConfigurator.swift */,
+				302E61B82458EDCC0019C4BD /* TableViewController.swift */,
+				302E61B92458EDCC0019C4BD /* TableViewModel.swift */,
+				302E61BA2458EDCC0019C4BD /* TableViewController.xib */,
+				302E61BB2458EDCC0019C4BD /* TableViewDataSoruce.swift */,
 			);
 			path = GenericTableView;
-			sourceTree = SOURCE_ROOT;
+			sourceTree = "<group>";
+		};
+		302E61C22458EDDA0019C4BD /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				302E61C32458EDDA0019C4BD /* Events */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		302E61C32458EDDA0019C4BD /* Events */ = {
+			isa = PBXGroup;
+			children = (
+				302E61C42458EDDA0019C4BD /* EventModel.swift */,
+				302E61C52458EDDA0019C4BD /* EventsViewController.swift */,
+				302E61C62458EDDA0019C4BD /* EventsRouter.swift */,
+				302E61C72458EDDA0019C4BD /* Cell */,
+				302E61CA2458EDDA0019C4BD /* EventsService.swift */,
+				302E61CB2458EDDA0019C4BD /* EventsPresenter.swift */,
+				302E61CC2458EDDA0019C4BD /* EventsProtocols.swift */,
+			);
+			path = Events;
+			sourceTree = "<group>";
+		};
+		302E61C72458EDDA0019C4BD /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				302E61C82458EDDA0019C4BD /* EventsTableViewCell.swift */,
+				302E61C92458EDDA0019C4BD /* EventsTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		302E61D72458EE3F0019C4BD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				302E61D82458EE3F0019C4BD /* StringExtensions.swift */,
+				302E61D92458EE3F0019C4BD /* DoubleExtensions.swift */,
+				302E61DA2458EE3F0019C4BD /* UIViewControllerExtensions.swift */,
+				302E61DB2458EE3F0019C4BD /* DateExtensions.swift */,
+				302E61DC2458EE3F0019C4BD /* UIImageViewExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
@@ -325,10 +376,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				302E61D12458EDDA0019C4BD /* EventsTableViewCell.xib in Resources */,
 				3008CFFC2457935600C892B0 /* LaunchScreen.storyboard in Resources */,
 				3008CFF92457935600C892B0 /* Assets.xcassets in Resources */,
 				3008CFF72457934F00C892B0 /* Main.storyboard in Resources */,
-				302E61872458B33D0019C4BD /* TableViewController.xib in Resources */,
+				302E61C02458EDCD0019C4BD /* TableViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,22 +405,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				302E61762458B24D0019C4BD /* StringExtensions.swift in Sources */,
+				302E61CF2458EDDA0019C4BD /* EventsRouter.swift in Sources */,
 				3008D0232457959600C892B0 /* APIEndpoints.swift in Sources */,
-				302E61832458B33D0019C4BD /* TestCell.swift in Sources */,
-				302E61862458B33D0019C4BD /* TableViewModel.swift in Sources */,
-				302E61782458B24D0019C4BD /* UIViewControllerExtensions.swift in Sources */,
+				302E61BC2458EDCD0019C4BD /* TestCell.swift in Sources */,
+				302E61DD2458EE3F0019C4BD /* StringExtensions.swift in Sources */,
+				302E61BF2458EDCD0019C4BD /* TableViewModel.swift in Sources */,
+				302E61E02458EE3F0019C4BD /* DateExtensions.swift in Sources */,
 				3008CFF42457934F00C892B0 /* ViewController.swift in Sources */,
+				302E61BE2458EDCD0019C4BD /* TableViewController.swift in Sources */,
+				302E61BD2458EDCD0019C4BD /* CellConfigurator.swift in Sources */,
 				3008CFF02457934F00C892B0 /* AppDelegate.swift in Sources */,
-				302E61792458B24D0019C4BD /* DateExtensions.swift in Sources */,
-				302E61772458B24D0019C4BD /* DoubleExtensions.swift in Sources */,
 				3008CFF22457934F00C892B0 /* SceneDelegate.swift in Sources */,
+				302E61DE2458EE3F0019C4BD /* DoubleExtensions.swift in Sources */,
+				302E61CD2458EDDA0019C4BD /* EventModel.swift in Sources */,
+				302E61D42458EDDA0019C4BD /* EventsProtocols.swift in Sources */,
+				302E61D62458EDF30019C4BD /* LoadingHandler.swift in Sources */,
+				302E61D22458EDDA0019C4BD /* EventsService.swift in Sources */,
+				302E61D32458EDDA0019C4BD /* EventsPresenter.swift in Sources */,
 				302E615F24579CF00019C4BD /* APIService.swift in Sources */,
-				302E61882458B33D0019C4BD /* TableViewDataSoruce.swift in Sources */,
+				302E61E12458EE3F0019C4BD /* UIImageViewExtensions.swift in Sources */,
 				302E61632457B78A0019C4BD /* EventsOutput.swift in Sources */,
-				302E617A2458B24D0019C4BD /* UIImageViewExtensions.swift in Sources */,
-				302E61842458B33D0019C4BD /* CellConfigurator.swift in Sources */,
-				302E61852458B33D0019C4BD /* TableViewController.swift in Sources */,
+				302E61D02458EDDA0019C4BD /* EventsTableViewCell.swift in Sources */,
+				302E61DF2458EE3F0019C4BD /* UIViewControllerExtensions.swift in Sources */,
+				302E61CE2458EDDA0019C4BD /* EventsViewController.swift in Sources */,
+				302E61C12458EDCD0019C4BD /* TableViewDataSoruce.swift in Sources */,
 				3008D021245794EA00C892B0 /* APICore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -2,11 +2,11 @@ import Foundation
 import UIKit
 
 final class APIService: APICore {
-
+    
     static func requestObject<T>(from endpoint: APIEndpoint,
-                          data: Data? = nil,
-                          type: T.Type,
-                          completion: @escaping CompletionCallback<T>) where T : Decodable {
+                                 data: Data? = nil,
+                                 type: T.Type,
+                                 completion: @escaping CompletionCallback<T>) where T : Decodable {
         
         request(from: endpoint.url,
                 type: type,
@@ -64,7 +64,7 @@ final class APIService: APICore {
                     completion(.failure(.decodingFailed))
                 }
             }
-            }.resume()
+        }.resume()
     }
     
     static func loadImage(from url: String, completion: @escaping RequestImageResult) {
