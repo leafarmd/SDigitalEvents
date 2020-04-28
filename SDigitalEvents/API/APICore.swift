@@ -1,14 +1,12 @@
 import Foundation
 import UIKit
 
-typealias Output = Decodable & Mockable
-
 protocol Mockable {
     static func mock() -> Self
 }
 
 protocol APICore: class {
-    static func requestObject<T: Output>(from endpoint: APIEndpoint, data: Data?, type: T.Type, completion: @escaping CompletionCallback<T>)
+    static func requestObject<T: Decodable>(from endpoint: APIEndpoint, data: Data?, type: T.Type, completion: @escaping CompletionCallback<T>)
 }
 
 enum CompletionStatus<T> {

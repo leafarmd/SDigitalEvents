@@ -6,7 +6,7 @@ final class APIService: APICore {
     static func requestObject<T>(from endpoint: APIEndpoint,
                           data: Data? = nil,
                           type: T.Type,
-                          completion: @escaping CompletionCallback<T>) where T : Mockable, T : Decodable {
+                          completion: @escaping CompletionCallback<T>) where T : Decodable {
         
         request(from: endpoint.url,
                 type: type,
