@@ -5,7 +5,7 @@ protocol Mockable {
     static func mock() -> Self
 }
 
-protocol APICore: class {
+protocol APIProtocols: class {
     static func requestObject<T: Decodable>(from endpoint: APIEndpoint, data: Data?, type: T.Type, completion: @escaping CompletionCallback<T>)
 }
 

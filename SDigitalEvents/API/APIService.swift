@@ -1,7 +1,7 @@
 import Foundation
 import UIKit
 
-final class APIService: APICore {
+final class APIService: APIProtocols {
     
     static func requestObject<T>(from endpoint: APIEndpoint,
                                  data: Data? = nil,
