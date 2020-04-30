@@ -1,14 +1,20 @@
 import Foundation
 
 final class CheckInService: CheckInServiceInput {
+    
+    private let service: APIProtocols
     var output: CheckInServiceOutput?
+    
+    init(service: APIProtocols) {
+        self.service = service
+    }
     
     func checkIn(input: CheckInInput) {
         
         do{
             let jsonData = try JSONEncoder().encode(input)
             
-            APIService.requestObject(from: .checkIn, data: jsonData, type: CheckInOutput.self) { [weak self] result in
+            service.requestObject(from: .checkIn, data: jsonData, type: CheckInOutput.self) { [weak self] result in
                 switch result {
                 case .success(let response):
                     if response.code == "200" {

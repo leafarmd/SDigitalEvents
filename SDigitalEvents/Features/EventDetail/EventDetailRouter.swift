@@ -12,7 +12,7 @@ final class EventDetailRouter: EventDetailRoutering {
     }
     
     func makeViewController() -> UIViewController {
-        let service = EventDetailService(id: id)
+        let service = EventDetailService(id: id, service: APICore())
         let presenter = EventDetailPresenter(service: service, router: self)
         service.output = presenter
         let dataSoruce = TableViewDataSoruce()

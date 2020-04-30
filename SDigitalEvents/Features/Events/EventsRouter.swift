@@ -18,7 +18,7 @@ final class EventsRouter: EventsRoutering {
     }
     
     func makeViewController() -> UIViewController {
-        let service = EventsService()
+        let service = EventsService(service: APICore())
         let presenter = EventsPresenter(service: service, router: self)
         service.output = presenter
         let dataSource = TableViewDataSoruce()

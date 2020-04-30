@@ -44,7 +44,7 @@ final class CheckInPresenter {
         }
         
         let input = CheckInInput(eventId: model.id, name: name, email: email)
-        service = CheckInService()
+        service = CheckInService(service: APICore())
         service?.output = self
         service?.checkIn(input: input)
         view?.showLoadingFeedback()

@@ -9,12 +9,17 @@
 import Foundation
 
 final class EventsService: EventsServiceInput {
+    
+    private let service: APIProtocols
     weak var output: EventsServiceOutput?
+    
+    init(service: APIProtocols) {
+        self.service = service
+    }
     
     func fetchEvents() {
         
-        
-        APIService.requestObject(from: .events, type: [EventsOutput].self) { [weak self] result in
+        service.requestObject(from: .events, data: nil, type: [EventsOutput].self) { [weak self] result in
             switch result {
             case .success(let response):
                 self?.output?.fetchEventsSucceeded(output: response)

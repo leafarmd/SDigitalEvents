@@ -6,7 +6,7 @@ protocol Mockable {
 }
 
 protocol APIProtocols: class {
-    static func requestObject<T: Decodable>(from endpoint: APIEndpoint, data: Data?, type: T.Type, completion: @escaping CompletionCallback<T>)
+    func requestObject<T: Decodable>(from endpoint: APIEndpoint, data: Data?, type: T.Type, completion: @escaping CompletionCallback<T>)
 }
 
 enum CompletionStatus<T> {

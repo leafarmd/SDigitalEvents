@@ -11,7 +11,7 @@ import UIKit
 extension UIImageView {
     func loadImageFromURL(_ url: String ) {
         
-        APIService.loadImage(from: url) { [weak self] result in
+        APICore.loadImage(from: url) { [weak self] result in
             switch result {
             case .success(let image): self?.image = image
             case .failure(_): self?.image = UIImage(named: "noimage")

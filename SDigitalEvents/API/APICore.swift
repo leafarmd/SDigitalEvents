@@ -1,9 +1,9 @@
 import Foundation
 import UIKit
 
-final class APIService: APIProtocols {
+final class APICore: APIProtocols {
     
-    static func requestObject<T>(from endpoint: APIEndpoint,
+    func requestObject<T>(from endpoint: APIEndpoint,
                                  data: Data? = nil,
                                  type: T.Type,
                                  completion: @escaping CompletionCallback<T>) where T : Decodable {
@@ -16,7 +16,7 @@ final class APIService: APIProtocols {
         
     }
     
-    private static func request<T: Decodable>(from endpoint: String,
+    private func request<T: Decodable>(from endpoint: String,
                                               type: T.Type,
                                               method: HttpMethod,
                                               data: Data?,

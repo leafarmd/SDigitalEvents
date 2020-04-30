@@ -17,7 +17,7 @@
 		3008D0122457935600C892B0 /* SDigitalEventsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3008D0112457935600C892B0 /* SDigitalEventsUITests.swift */; };
 		3008D021245794EA00C892B0 /* APIProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3008D020245794EA00C892B0 /* APIProtocols.swift */; };
 		3008D0232457959600C892B0 /* APIEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3008D0222457959600C892B0 /* APIEndpoints.swift */; };
-		302E615F24579CF00019C4BD /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302E615E24579CF00019C4BD /* APIService.swift */; };
+		302E615F24579CF00019C4BD /* APICore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302E615E24579CF00019C4BD /* APICore.swift */; };
 		302E61632457B78A0019C4BD /* EventsOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302E61622457B78A0019C4BD /* EventsOutput.swift */; };
 		302E61BC2458EDCD0019C4BD /* TestCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302E61B62458EDCC0019C4BD /* TestCell.swift */; };
 		302E61BD2458EDCD0019C4BD /* CellConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302E61B72458EDCC0019C4BD /* CellConfigurator.swift */; };
@@ -59,6 +59,7 @@
 		302E6216245A4FFB0019C4BD /* CheckInService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302E6210245A4FFB0019C4BD /* CheckInService.swift */; };
 		302E6219245A50E10019C4BD /* CheckInInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302E6218245A50E10019C4BD /* CheckInInput.swift */; };
 		302E621B245A511B0019C4BD /* CheckInOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302E621A245A511B0019C4BD /* CheckInOutput.swift */; };
+		302E621E245A52B90019C4BD /* APIStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302E621D245A52B90019C4BD /* APIStub.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,7 +96,7 @@
 		3008D0132457935600C892B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3008D020245794EA00C892B0 /* APIProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIProtocols.swift; sourceTree = "<group>"; };
 		3008D0222457959600C892B0 /* APIEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndpoints.swift; sourceTree = "<group>"; };
-		302E615E24579CF00019C4BD /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		302E615E24579CF00019C4BD /* APICore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICore.swift; sourceTree = "<group>"; };
 		302E61622457B78A0019C4BD /* EventsOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsOutput.swift; sourceTree = "<group>"; };
 		302E61B62458EDCC0019C4BD /* TestCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestCell.swift; sourceTree = "<group>"; };
 		302E61B72458EDCC0019C4BD /* CellConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellConfigurator.swift; sourceTree = "<group>"; };
@@ -137,6 +138,7 @@
 		302E6210245A4FFB0019C4BD /* CheckInService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckInService.swift; sourceTree = "<group>"; };
 		302E6218245A50E10019C4BD /* CheckInInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInInput.swift; sourceTree = "<group>"; };
 		302E621A245A511B0019C4BD /* CheckInOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInOutput.swift; sourceTree = "<group>"; };
+		302E621D245A52B90019C4BD /* APIStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIStub.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,6 +207,7 @@
 		3008D0052457935600C892B0 /* SDigitalEventsTests */ = {
 			isa = PBXGroup;
 			children = (
+				302E621C245A52A30019C4BD /* API */,
 				3008D0062457935600C892B0 /* SDigitalEventsTests.swift */,
 				3008D0082457935600C892B0 /* Info.plist */,
 			);
@@ -226,7 +229,7 @@
 				302E61602457B76E0019C4BD /* Model */,
 				3008D020245794EA00C892B0 /* APIProtocols.swift */,
 				3008D0222457959600C892B0 /* APIEndpoints.swift */,
-				302E615E24579CF00019C4BD /* APIService.swift */,
+				302E615E24579CF00019C4BD /* APICore.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -362,6 +365,14 @@
 				302E6218245A50E10019C4BD /* CheckInInput.swift */,
 			);
 			path = Input;
+			sourceTree = "<group>";
+		};
+		302E621C245A52A30019C4BD /* API */ = {
+			isa = PBXGroup;
+			children = (
+				302E621D245A52B90019C4BD /* APIStub.swift */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -526,7 +537,7 @@
 				302E61D62458EDF30019C4BD /* LoadingHandler.swift in Sources */,
 				302E61D22458EDDA0019C4BD /* EventsService.swift in Sources */,
 				302E61D32458EDDA0019C4BD /* EventsPresenter.swift in Sources */,
-				302E615F24579CF00019C4BD /* APIService.swift in Sources */,
+				302E615F24579CF00019C4BD /* APICore.swift in Sources */,
 				302E6211245A4FFB0019C4BD /* CheckInViewController.swift in Sources */,
 				302E61E12458EE3F0019C4BD /* UIImageViewExtensions.swift in Sources */,
 				302E6200245A4ADC0019C4BD /* EventDetailService.swift in Sources */,
@@ -549,6 +560,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				302E621E245A52B90019C4BD /* APIStub.swift in Sources */,
 				3008D0072457935600C892B0 /* SDigitalEventsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
