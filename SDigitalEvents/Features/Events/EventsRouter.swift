@@ -10,7 +10,7 @@ import UIKit
 
 final class EventsRouter: EventsRoutering {
     
-    //weak var router: EventDetailRoutering?
+    weak var router: EventDetailRoutering?
     private let navigator: UINavigationController
     
     init(navigator: UINavigationController) {
@@ -27,9 +27,9 @@ final class EventsRouter: EventsRoutering {
     }
     
     func navigateToEventDetail(with id: String) {
-//        let router = EventDetailRouter(navigator: navigator, id: id)
-//        navigator.pushViewController(router.makeViewController(), animated: true)
-//        
-//        self.router = router
+        let router = EventDetailRouter(navigator: navigator, id: id)
+        navigator.pushViewController(router.makeViewController(), animated: true)
+        
+        self.router = router
     }
 }
