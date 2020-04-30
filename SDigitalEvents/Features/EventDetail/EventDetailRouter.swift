@@ -1,18 +1,10 @@
-//
-//  EventDetailRoutering.swift
-//  Test-iOS
-//
-//  Created by Rafael Damasceno on 28/07/19.
-//  Copyright © 2019 Rafael Damasceno. All rights reserved.
-//
-
 import UIKit
 
 final class EventDetailRouter: EventDetailRoutering {
     
     private let navigator: UINavigationController
     private let id: String
-    //weak var router: CheckInRouter?
+    weak var router: CheckInRouter?
     
     init(navigator: UINavigationController, id: String) {
         self.navigator = navigator
@@ -30,9 +22,9 @@ final class EventDetailRouter: EventDetailRoutering {
     }
     
     func navigateToCheckIn(model: EventDetailModel) {
-//        let router = CheckInRouter(navigator: navigator, model: model)
-//        navigator.pushViewController(router.makeViewController(), animated: true)
-//        
-//        self.router = router
+        let router = CheckInRouter(navigator: navigator, model: model)
+        navigator.pushViewController(router.makeViewController(), animated: true)
+        
+        self.router = router
     }
 }

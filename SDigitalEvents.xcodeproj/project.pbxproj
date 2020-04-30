@@ -51,6 +51,14 @@
 		302E6205245A4ADC0019C4BD /* DetailMapTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302E61F9245A4ADB0019C4BD /* DetailMapTableViewCell.swift */; };
 		302E6206245A4ADC0019C4BD /* DetailMainInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 302E61FA245A4ADB0019C4BD /* DetailMainInfoTableViewCell.xib */; };
 		302E6207245A4ADC0019C4BD /* EventDetailProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302E61FB245A4ADB0019C4BD /* EventDetailProtocols.swift */; };
+		302E6211245A4FFB0019C4BD /* CheckInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302E620B245A4FFB0019C4BD /* CheckInViewController.swift */; };
+		302E6212245A4FFB0019C4BD /* CheckInPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302E620C245A4FFB0019C4BD /* CheckInPresenter.swift */; };
+		302E6213245A4FFB0019C4BD /* CheckInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 302E620D245A4FFB0019C4BD /* CheckInViewController.xib */; };
+		302E6214245A4FFB0019C4BD /* CheckInProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302E620E245A4FFB0019C4BD /* CheckInProtocols.swift */; };
+		302E6215245A4FFB0019C4BD /* CheckInRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302E620F245A4FFB0019C4BD /* CheckInRouter.swift */; };
+		302E6216245A4FFB0019C4BD /* CheckInService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302E6210245A4FFB0019C4BD /* CheckInService.swift */; };
+		302E6219245A50E10019C4BD /* CheckInInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302E6218245A50E10019C4BD /* CheckInInput.swift */; };
+		302E621B245A511B0019C4BD /* CheckInOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302E621A245A511B0019C4BD /* CheckInOutput.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -121,6 +129,14 @@
 		302E61F9245A4ADB0019C4BD /* DetailMapTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailMapTableViewCell.swift; sourceTree = "<group>"; };
 		302E61FA245A4ADB0019C4BD /* DetailMainInfoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailMainInfoTableViewCell.xib; sourceTree = "<group>"; };
 		302E61FB245A4ADB0019C4BD /* EventDetailProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventDetailProtocols.swift; sourceTree = "<group>"; };
+		302E620B245A4FFB0019C4BD /* CheckInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckInViewController.swift; sourceTree = "<group>"; };
+		302E620C245A4FFB0019C4BD /* CheckInPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckInPresenter.swift; sourceTree = "<group>"; };
+		302E620D245A4FFB0019C4BD /* CheckInViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CheckInViewController.xib; sourceTree = "<group>"; };
+		302E620E245A4FFB0019C4BD /* CheckInProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckInProtocols.swift; sourceTree = "<group>"; };
+		302E620F245A4FFB0019C4BD /* CheckInRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckInRouter.swift; sourceTree = "<group>"; };
+		302E6210245A4FFB0019C4BD /* CheckInService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckInService.swift; sourceTree = "<group>"; };
+		302E6218245A50E10019C4BD /* CheckInInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInInput.swift; sourceTree = "<group>"; };
+		302E621A245A511B0019C4BD /* CheckInOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInOutput.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -218,6 +234,7 @@
 		302E61602457B76E0019C4BD /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				302E6217245A50C90019C4BD /* Input */,
 				302E61612457B7780019C4BD /* Output */,
 			);
 			path = Model;
@@ -227,6 +244,7 @@
 			isa = PBXGroup;
 			children = (
 				302E61622457B78A0019C4BD /* EventsOutput.swift */,
+				302E621A245A511B0019C4BD /* CheckInOutput.swift */,
 			);
 			path = Output;
 			sourceTree = "<group>";
@@ -256,6 +274,7 @@
 		302E61C22458EDDA0019C4BD /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				302E6208245A4FC60019C4BD /* CheckIn */,
 				302E61EC245A4AA50019C4BD /* EventDetail */,
 				302E61C32458EDDA0019C4BD /* Events */,
 			);
@@ -322,6 +341,27 @@
 				302E61FA245A4ADB0019C4BD /* DetailMainInfoTableViewCell.xib */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		302E6208245A4FC60019C4BD /* CheckIn */ = {
+			isa = PBXGroup;
+			children = (
+				302E620C245A4FFB0019C4BD /* CheckInPresenter.swift */,
+				302E620E245A4FFB0019C4BD /* CheckInProtocols.swift */,
+				302E620F245A4FFB0019C4BD /* CheckInRouter.swift */,
+				302E6210245A4FFB0019C4BD /* CheckInService.swift */,
+				302E620B245A4FFB0019C4BD /* CheckInViewController.swift */,
+				302E620D245A4FFB0019C4BD /* CheckInViewController.xib */,
+			);
+			path = CheckIn;
+			sourceTree = "<group>";
+		};
+		302E6217245A50C90019C4BD /* Input */ = {
+			isa = PBXGroup;
+			children = (
+				302E6218245A50E10019C4BD /* CheckInInput.swift */,
+			);
+			path = Input;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -435,6 +475,7 @@
 				302E61C02458EDCD0019C4BD /* TableViewController.xib in Resources */,
 				302E6204245A4ADC0019C4BD /* CheckInTableViewCell.xib in Resources */,
 				302E6202245A4ADC0019C4BD /* DetailMapTableViewCell.xib in Resources */,
+				302E6213245A4FFB0019C4BD /* CheckInViewController.xib in Resources */,
 				302E6206245A4ADC0019C4BD /* DetailMainInfoTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -460,13 +501,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				302E6215245A4FFB0019C4BD /* CheckInRouter.swift in Sources */,
 				302E61CF2458EDDA0019C4BD /* EventsRouter.swift in Sources */,
 				3008D0232457959600C892B0 /* APIEndpoints.swift in Sources */,
 				302E61BC2458EDCD0019C4BD /* TestCell.swift in Sources */,
 				302E61DD2458EE3F0019C4BD /* StringExtensions.swift in Sources */,
+				302E6216245A4FFB0019C4BD /* CheckInService.swift in Sources */,
 				302E61BF2458EDCD0019C4BD /* TableViewModel.swift in Sources */,
 				302E61E02458EE3F0019C4BD /* DateExtensions.swift in Sources */,
 				3008CFF42457934F00C892B0 /* ViewController.swift in Sources */,
+				302E621B245A511B0019C4BD /* CheckInOutput.swift in Sources */,
+				302E6214245A4FFB0019C4BD /* CheckInProtocols.swift in Sources */,
 				302E61BE2458EDCD0019C4BD /* TableViewController.swift in Sources */,
 				302E61BD2458EDCD0019C4BD /* CellConfigurator.swift in Sources */,
 				302E6201245A4ADC0019C4BD /* DetailMainInfoTableViewCell.swift in Sources */,
@@ -482,16 +527,19 @@
 				302E61D22458EDDA0019C4BD /* EventsService.swift in Sources */,
 				302E61D32458EDDA0019C4BD /* EventsPresenter.swift in Sources */,
 				302E615F24579CF00019C4BD /* APIService.swift in Sources */,
+				302E6211245A4FFB0019C4BD /* CheckInViewController.swift in Sources */,
 				302E61E12458EE3F0019C4BD /* UIImageViewExtensions.swift in Sources */,
 				302E6200245A4ADC0019C4BD /* EventDetailService.swift in Sources */,
 				302E61632457B78A0019C4BD /* EventsOutput.swift in Sources */,
 				302E61D02458EDDA0019C4BD /* EventsTableViewCell.swift in Sources */,
 				302E61DF2458EE3F0019C4BD /* UIViewControllerExtensions.swift in Sources */,
 				302E61FC245A4ADC0019C4BD /* EventDetailPresenter.swift in Sources */,
+				302E6219245A50E10019C4BD /* CheckInInput.swift in Sources */,
 				302E61FD245A4ADC0019C4BD /* EventDetailModel.swift in Sources */,
 				302E61CE2458EDDA0019C4BD /* EventsViewController.swift in Sources */,
 				302E61FE245A4ADC0019C4BD /* EventDetailViewcontroller.swift in Sources */,
 				302E6203245A4ADC0019C4BD /* CheckInTableViewCell.swift in Sources */,
+				302E6212245A4FFB0019C4BD /* CheckInPresenter.swift in Sources */,
 				302E61C12458EDCD0019C4BD /* TableViewDataSoruce.swift in Sources */,
 				3008D021245794EA00C892B0 /* APIProtocols.swift in Sources */,
 			);
