@@ -32,6 +32,8 @@ final class EventsPresenter {
     }
 }
 
+// MARK: - EventsServiceOutput
+
 extension EventsPresenter: EventsServiceOutput {
     
     func fetchEventsSucceeded(output: [EventsOutput]) {

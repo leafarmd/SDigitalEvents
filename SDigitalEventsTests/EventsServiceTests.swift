@@ -1,15 +1,7 @@
-//
-//  SDigitalEventsTests.swift
-//  SDigitalEventsTests
-//
-//  Created by Rafael on 27/4/20.
-//  Copyright © 2020 rmd. All rights reserved.
-//
-
 import XCTest
 @testable import SDigitalEvents
 
-class SDigitalEventsTests: XCTestCase {
+class EventsServiceTests: XCTestCase {
 
     var api: APIStub!
     var sut: EventsService!

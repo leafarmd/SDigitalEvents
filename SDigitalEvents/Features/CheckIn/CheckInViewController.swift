@@ -65,6 +65,8 @@ class CheckInViewController: UIViewController {
     }
 }
 
+// MARK: - CheckInView
+
 extension CheckInViewController: CheckInView {
     func setTitle(_ text: String){
         labelTitle.text = text

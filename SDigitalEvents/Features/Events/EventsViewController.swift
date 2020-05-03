@@ -26,6 +26,8 @@ final class EventsViewController: TableViewController {
     }
 }
 
+// MARK: - EventsView
+
 extension EventsViewController: EventsView {
     
     func showLoadingFeedback() {

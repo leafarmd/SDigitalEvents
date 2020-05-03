@@ -52,6 +52,8 @@ final class CheckInPresenter {
     }
 }
 
+// MARK: - CheckInServiceOutput
+
 extension CheckInPresenter: CheckInServiceOutput {
     func checkInSucceeded() {
         view?.hideLoadingFeedback()

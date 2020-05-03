@@ -13,7 +13,7 @@
 		3008CFF72457934F00C892B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3008CFF52457934F00C892B0 /* Main.storyboard */; };
 		3008CFF92457935600C892B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3008CFF82457935600C892B0 /* Assets.xcassets */; };
 		3008CFFC2457935600C892B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3008CFFA2457935600C892B0 /* LaunchScreen.storyboard */; };
-		3008D0072457935600C892B0 /* SDigitalEventsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3008D0062457935600C892B0 /* SDigitalEventsTests.swift */; };
+		3008D0072457935600C892B0 /* EventsServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3008D0062457935600C892B0 /* EventsServiceTests.swift */; };
 		3008D0122457935600C892B0 /* SDigitalEventsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3008D0112457935600C892B0 /* SDigitalEventsUITests.swift */; };
 		3008D021245794EA00C892B0 /* APIProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3008D020245794EA00C892B0 /* APIProtocols.swift */; };
 		3008D0232457959600C892B0 /* APIEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3008D0222457959600C892B0 /* APIEndpoints.swift */; };
@@ -60,6 +60,7 @@
 		302E6219245A50E10019C4BD /* CheckInInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302E6218245A50E10019C4BD /* CheckInInput.swift */; };
 		302E621B245A511B0019C4BD /* CheckInOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302E621A245A511B0019C4BD /* CheckInOutput.swift */; };
 		302E621E245A52B90019C4BD /* APIStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302E621D245A52B90019C4BD /* APIStub.swift */; };
+		302E6220245F69610019C4BD /* EventsPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302E621F245F69610019C4BD /* EventsPresenterTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,7 +90,7 @@
 		3008CFFB2457935600C892B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3008CFFD2457935600C892B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3008D0022457935600C892B0 /* SDigitalEventsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SDigitalEventsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3008D0062457935600C892B0 /* SDigitalEventsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDigitalEventsTests.swift; sourceTree = "<group>"; };
+		3008D0062457935600C892B0 /* EventsServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsServiceTests.swift; sourceTree = "<group>"; };
 		3008D0082457935600C892B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3008D00D2457935600C892B0 /* SDigitalEventsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SDigitalEventsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3008D0112457935600C892B0 /* SDigitalEventsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDigitalEventsUITests.swift; sourceTree = "<group>"; };
@@ -139,6 +140,7 @@
 		302E6218245A50E10019C4BD /* CheckInInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInInput.swift; sourceTree = "<group>"; };
 		302E621A245A511B0019C4BD /* CheckInOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInOutput.swift; sourceTree = "<group>"; };
 		302E621D245A52B90019C4BD /* APIStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIStub.swift; sourceTree = "<group>"; };
+		302E621F245F69610019C4BD /* EventsPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsPresenterTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,8 +210,9 @@
 			isa = PBXGroup;
 			children = (
 				302E621C245A52A30019C4BD /* API */,
-				3008D0062457935600C892B0 /* SDigitalEventsTests.swift */,
+				3008D0062457935600C892B0 /* EventsServiceTests.swift */,
 				3008D0082457935600C892B0 /* Info.plist */,
+				302E621F245F69610019C4BD /* EventsPresenterTests.swift */,
 			);
 			path = SDigitalEventsTests;
 			sourceTree = "<group>";
@@ -560,8 +563,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				302E6220245F69610019C4BD /* EventsPresenterTests.swift in Sources */,
 				302E621E245A52B90019C4BD /* APIStub.swift in Sources */,
-				3008D0072457935600C892B0 /* SDigitalEventsTests.swift in Sources */,
+				3008D0072457935600C892B0 /* EventsServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

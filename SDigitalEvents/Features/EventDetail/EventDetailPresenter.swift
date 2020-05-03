@@ -20,6 +20,8 @@ final class EventDetailPresenter {
     }
 }
 
+// MARK: - EventDetailServiceOutput
+
 extension EventDetailPresenter: EventDetailServiceOutput {
     
     func fetchEventDetailSucceeded(output: EventsOutput) {

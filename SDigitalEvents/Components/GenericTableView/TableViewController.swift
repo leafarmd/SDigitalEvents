@@ -33,7 +33,7 @@ class TableViewController: UIViewController {
         
         tableView.dataSource = dataSoruce
         self.tableView.rowHeight = UITableView.automaticDimension
-        self.tableView.estimatedRowHeight = 50
+        self.tableView.estimatedRowHeight = 100
         self.tableView.tableFooterView = UIView()
     }
 }
