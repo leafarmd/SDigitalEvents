@@ -9,7 +9,7 @@ This challange app was made with MVP(model view presenter) Architecture with pro
 
 
 
-## todos:
+## To Dos:
 
 - Improve Design
 - Unit test for event detail and check in features
